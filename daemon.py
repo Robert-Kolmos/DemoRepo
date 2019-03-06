@@ -103,7 +103,6 @@ class GitUpDaemon(Daemon):
     # run the daemon connected to a terminal for easier testing.
     def run(self):
         make a change in run
-        
         self.__get_user_account()
         change in run
         if not self.repofile:

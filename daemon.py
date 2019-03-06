@@ -103,10 +103,7 @@ class GitUpDaemon(Daemon):
     # Called when the daemon is started or restarted. May be called directly to
     # run the daemon connected to a terminal for easier testing.
     def run(self):
-        make a change in run
         self.__get_user_account()
-        
-        change in run
         if not self.repofile:
             # A client might end up in the case if they don't pass a repofile to
             # the constructor. Allowing the user to not pass a repofile, makes
@@ -116,7 +113,6 @@ class GitUpDaemon(Daemon):
             self.stop() 
         # Parse repositories on every run to allow restarting to daemon to
         # update the repositories.
-        change ddep in run
         self.__parse_repositories()
         if not self.repositories:
             print("run() called with an empty set of repositories",

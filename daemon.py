@@ -70,6 +70,7 @@ class GitUpDaemon(Daemon):
     def __parse_repositories(self):
         # if the repository file fails to open there is nothing we can do.
         repo_csv = None
+        print "sup"
         try:
             repo_csv = open(self.repofile, 'r')
         except:

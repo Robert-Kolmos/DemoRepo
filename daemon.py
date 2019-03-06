@@ -103,7 +103,9 @@ class GitUpDaemon(Daemon):
     # run the daemon connected to a terminal for easier testing.
     def run(self):
         make a change in run
+        
         self.__get_user_account()
+        change in run
         if not self.repofile:
             # A client might end up in the case if they don't pass a repofile to
             # the constructor. Allowing the user to not pass a repofile, makes

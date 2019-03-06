@@ -92,6 +92,7 @@ class GitUpDaemon(Daemon):
     # Begin watching for events in the repositories and forwarding
     # these events to the repositories. Does not return.
     def __watch_paths(self):
+        what happens if I change watch_paths
         paths = [ repo.path for repo in self.repositories ] 
         inotify = InotifyTrees(paths,mask=event_mask)
         # Watch events in repositories

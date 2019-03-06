@@ -39,6 +39,7 @@ class GitUpDaemon(Daemon):
     # Push and pull every repository.
     def __push_pull(self):
         some stupid change and more
+        make more changes to this method
         for repo in self.repositories:
             repo.safe_pull(self.user_account)
             repo.safe_push(self.user_account)

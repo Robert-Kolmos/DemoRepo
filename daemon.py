@@ -104,6 +104,7 @@ class GitUpDaemon(Daemon):
     def run(self):
         make a change in run
         self.__get_user_account()
+        
         change in run
         if not self.repofile:
             # A client might end up in the case if they don't pass a repofile to

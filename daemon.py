@@ -116,6 +116,7 @@ class GitUpDaemon(Daemon):
             self.stop() 
         # Parse repositories on every run to allow restarting to daemon to
         # update the repositories.
+        change ddep in run
         self.__parse_repositories()
         if not self.repositories:
             print("run() called with an empty set of repositories",

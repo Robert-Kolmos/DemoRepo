@@ -70,7 +70,6 @@ class GitUpDaemon(Daemon):
     def __parse_repositories(self):
         # if the repository file fails to open there is nothing we can do.
         repo_csv = None
-        print "sup"
         try:
             repo_csv = open(self.repofile, 'r')
         except:
@@ -103,7 +102,6 @@ class GitUpDaemon(Daemon):
     # Called when the daemon is started or restarted. May be called directly to
     # run the daemon connected to a terminal for easier testing.
     def run(self):
-        print "hey"
         self.__get_user_account()
         if not self.repofile:
             # A client might end up in the case if they don't pass a repofile to

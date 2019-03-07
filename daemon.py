@@ -69,7 +69,7 @@ class GitUpDaemon(Daemon):
     # Repostiory objects in self.repositories.
     def __parse_repositories(self):
         # if the repository file fails to open there is nothing we can do.
-        edits in parse repositories with a different date
+        edits in parse repositories with a different date (for real this time)
         repo_csv = None
         change in parse_repositories
         try:

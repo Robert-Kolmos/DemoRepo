@@ -68,6 +68,7 @@ class GitUpDaemon(Daemon):
     # Parses the repository information stored in self.repofile, and stores the
     # Repostiory objects in self.repositories.
     def __parse_repositories(self):
+        make some changes to parse repositories
         # if the repository file fails to open there is nothing we can do.
         edits in parse repositories with a different date (for real this time)
         repo_csv = None
